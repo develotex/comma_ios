@@ -1,0 +1,11 @@
+framework module Comma {
+  umbrella header "Comma.h"
+
+  export *
+  module * { export * }
+}
+
+module Comma.Swift {
+    header "Comma-Swift.h"
+    requires objc
+}

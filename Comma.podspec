@@ -32,13 +32,11 @@ Pod::Spec.new do |s|
 #   'Comma' => ['Comma.framework/Comma.bundle/*.png']
 #  }
 
- s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
- s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
-
-
  s.source_files = 'Comma.framework/Headers/**/*.{h,m,swift}'
  s.public_header_files = 'Comma.framework/Headers/**/*.{h,m,swift}'
  s.vendored_frameworks = 'Comma.framework'
 
-
+ s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+ s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+ 
 end

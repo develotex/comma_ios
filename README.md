@@ -145,6 +145,17 @@ End Call
 commaManager?.endCall()
 ```
 
+Check Connection State
+```
+commaManager?.connectionStateDidChange =  { state in
+  switch state {
+  case .checking:
+  case .connected:
+  case .failed:
+  case .disconnected:
+  }
+}
+```
 
 ## Author
 

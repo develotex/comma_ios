@@ -2,8 +2,8 @@
 //  Comma.h
 //  Comma
 //
-//  Created by loop on 23.03.2021.
-//
+//  Created by develotex
+//  Copyright (c) 2021 develotex. All rights reserved.
 
 #import <Foundation/Foundation.h>
 

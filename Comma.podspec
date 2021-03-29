@@ -8,7 +8,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'Comma'
-  s.version      = '1.0.0'
+  s.version      = '1.0.1'
   s.summary      = 'Comma'
   s.description  = <<-DESC
    Comma is an SDK for audio and video calls.
@@ -21,8 +21,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '13.0'
   s.swift_version      = '4.0'
   
- 
-
   s.frameworks = 'UIKit'
   s.dependency 'GoogleWebRTC', '~> 1.1'
   s.dependency 'SwiftSignalRClient'

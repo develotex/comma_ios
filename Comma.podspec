@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = 'http://develotex.io'
   s.source       = { :git => 'https://github.com/develotex/comma_ios.git', :tag => s.version }
-  s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.author             = { 'develotex' => 'develotex@gmail.com' }
-
+  s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.platform     = :ios, '13.0'
-  s.swift_version      = '4.0'
+#  s.swift_version      = '4.0'
+  s.vendored_frameworks = 'Comma.framework'
   
   s.frameworks = 'UIKit'
   s.dependency 'GoogleWebRTC', '~> 1.1'
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
  s.source_files = 'Comma.framework/Headers/**/*.{h,m,swift}'
  s.public_header_files = 'Comma.framework/Headers/**/*.{h,m,swift}'
- s.vendored_frameworks = 'Comma.framework'
+
 
  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}

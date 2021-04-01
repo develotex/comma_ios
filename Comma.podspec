@@ -8,7 +8,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'Comma'
-  s.version      = '1.0.1'
+  s.version      = '1.0.2'
   s.summary      = 'Comma'
   s.description  = <<-DESC
    Comma is an SDK for audio and video calls.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author             = { 'develotex' => 'develotex@gmail.com' }
   s.license      = { :type => 'Commercial', :file => 'LICENSE' }
   s.platform     = :ios, '13.0'
-#  s.swift_version      = '4.0'
+  s.swift_version      = '5.0'
   s.vendored_frameworks = 'Comma.framework'
   
   s.frameworks = 'UIKit'

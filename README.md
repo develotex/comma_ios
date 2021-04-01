@@ -137,7 +137,7 @@ commaManager?.setSpeaker(false)
 
 streaming to local and remote views during a video call
 ```
-commaService?.setupVideo(localView: <local_UIView>, remoteView: <remote_UIView>)
+commaService?.setupVideo(localView: <local_UIView>, remoteView: <remote_UIView>,cameraPosition: <camera_position>)
 ```
 
 End Call

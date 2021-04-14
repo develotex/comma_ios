@@ -8,7 +8,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'Comma'
-  s.version      = '1.0.2'
+  s.version      = '1.0.3'
   s.summary      = 'Comma'
   s.description  = <<-DESC
    Comma is an SDK for audio and video calls.

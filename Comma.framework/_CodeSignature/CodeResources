@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yy+StS3O1I06gr/S1GtMmXh8F/c=
+		0OX9CjFjDZV0i8lo8wDwyKjOKn8=
 		</data>
 		<key>Modules/Comma.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		sApinI33Lm1dDjfvNormOTHn8V0=
+		SGWA0busD4sLInu0xS+222fh86g=
 		</data>
 		<key>Modules/Comma.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		sApinI33Lm1dDjfvNormOTHn8V0=
+		SGWA0busD4sLInu0xS+222fh86g=
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		A2OWDe8gag8uZ+AqWFOH7ExO/Sc=
+		V59v02T/VWPakMAIo3sjGt6bnN4=
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		A2OWDe8gag8uZ+AqWFOH7ExO/Sc=
+		V59v02T/VWPakMAIo3sjGt6bnN4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ecDMxbakOz4Xpy9i2Q51vkF3RRj3uylCr40Tiu0ImHE=
+			5y9+Bv8yPG8l1JQR3ok3sOpvgB9OLPHUTlb7fWc6SA8=
 			</data>
 		</dict>
 		<key>Modules/Comma.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ecDMxbakOz4Xpy9i2Q51vkF3RRj3uylCr40Tiu0ImHE=
+			5y9+Bv8yPG8l1JQR3ok3sOpvgB9OLPHUTlb7fWc6SA8=
 			</data>
 		</dict>
 		<key>Modules/Comma.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xXwEaU3B+hP8IFtXQzBXbHF6wQZituPorwR/X4wW1UE=
+			67Y8l1WwQX4blGVefKJyFaPvsBwQSSOS0zOKfJg8I7w=
 			</data>
 		</dict>
 		<key>Modules/Comma.swiftmodule/arm64.swiftdoc</key>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xXwEaU3B+hP8IFtXQzBXbHF6wQZituPorwR/X4wW1UE=
+			67Y8l1WwQX4blGVefKJyFaPvsBwQSSOS0zOKfJg8I7w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

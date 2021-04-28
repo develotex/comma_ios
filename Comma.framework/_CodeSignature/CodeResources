@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PUQvRXUeKrAgu2u/l2s6uYcAeKU=
+		W4TN5b+Eb4ddJaHMB2y3tXIWnOg=
 		</data>
 		<key>Modules/Comma.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		6aLVTYlTW8jtYGgN0x0Vd691EQ8=
+		muACOpxYtfqLeFkPjtyp0I2fjG8=
 		</data>
 		<key>Modules/Comma.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		6aLVTYlTW8jtYGgN0x0Vd691EQ8=
+		muACOpxYtfqLeFkPjtyp0I2fjG8=
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		I3ZTQ+sCjuMyCMgO0IzGQ0S9zCE=
+		WNUTPhjIGCPEo8UN034zgXaoRlg=
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		UspPk060vY5Y45/ChpawVyunzqE=
+		EE9KIVaI0pP5o+0s0TYFRx4n+8w=
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		I3ZTQ+sCjuMyCMgO0IzGQ0S9zCE=
+		WNUTPhjIGCPEo8UN034zgXaoRlg=
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		UspPk060vY5Y45/ChpawVyunzqE=
+		EE9KIVaI0pP5o+0s0TYFRx4n+8w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,14 +73,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eWXzCvuykM0xbYjBX1b8xWT5vfn/V0UOeTqf+WXfIvw=
+			xWBisWD2aKyH7g0IrgaVyfJfTAR0XOebJ7pD6an+ygI=
 			</data>
 		</dict>
 		<key>Modules/Comma.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eWXzCvuykM0xbYjBX1b8xWT5vfn/V0UOeTqf+WXfIvw=
+			xWBisWD2aKyH7g0IrgaVyfJfTAR0XOebJ7pD6an+ygI=
 			</data>
 		</dict>
 		<key>Modules/Comma.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtXl8+L4JE5B/5W6uDN6z6zwzYTtRt+6AGNvO/995Qs=
+			jw+GHBu/sE7AN1Oc2NzNSeljzkoi3yHToKqiQHVyw5k=
 			</data>
 		</dict>
 		<key>Modules/Comma.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M1baYScav9Xl9BoMxA5rikTllleY9D28no0BLHTvXQI=
+			hxB7gOCGeC4yfqq3xZKUB0lznRnv3f7DEAeejrvTZhI=
 			</data>
 		</dict>
 		<key>Modules/Comma.swiftmodule/arm64.swiftdoc</key>
@@ -115,14 +115,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtXl8+L4JE5B/5W6uDN6z6zwzYTtRt+6AGNvO/995Qs=
+			jw+GHBu/sE7AN1Oc2NzNSeljzkoi3yHToKqiQHVyw5k=
 			</data>
 		</dict>
 		<key>Modules/Comma.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M1baYScav9Xl9BoMxA5rikTllleY9D28no0BLHTvXQI=
+			hxB7gOCGeC4yfqq3xZKUB0lznRnv3f7DEAeejrvTZhI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

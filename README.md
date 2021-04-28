@@ -103,8 +103,7 @@ func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload
 
 
 ### **Accept or Decline Incoming Call**
-
-Accept
+Accept 
 ```
   self.commaManager?.answerCall(true, type: incomingCall.callType)
 ```

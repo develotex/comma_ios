@@ -39,6 +39,7 @@ public protocol CommaService {
   var isCallEnded: ((Swift.String?) -> Swift.Void)? { get set }
   var connectionStateDidChange: ((Comma.ConnectionState?) -> Swift.Void)? { get set }
   var isReceiveIncomingCall: ((Comma.IncomingCall) -> Swift.Void)? { get set }
+  func closePeerConnection()
 }
 @_inheritsConvenienceInitializers @objc public class CommaManager : ObjectiveC.NSObject {
   public static var shared: Comma.CommaManager
@@ -55,7 +56,9 @@ public protocol CommaService {
   @objc deinit
 }
 extension CommaManager : Comma.CommaService {
+  public func closePeerConnection()
   public func deleteDevice()
+  public func closeConnection()
   public func answerCall(_ isAccept: Swift.Bool, type: Swift.Int?)
   public func didReceiveIncomingPushWith(dictionaryPayload: [Swift.AnyHashable : Any], withCallKit: Swift.Bool)
   public func didReceiveIncomingPushWith(incomingCall: Comma.IncomingCall, withCallKit: Swift.Bool)

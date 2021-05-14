@@ -62,6 +62,9 @@ commaManager?.configureService (
 Please note that The registration method is called after connecting to the signaling server. This method is a direct alternative to the Login method, with the only difference that Login authorizes the connection for an existing device, and Register creates a new device and automatically authorizes the connection for it. Thus, you cannot call Login after Register.
 
 
+Please call  `closeConnection()` in method  `applicationDidEnterBackground`  to properly close all connections & configure your session anew in method  `applicationDidBecomeActive` 
+
+
 ### **Callbacks**
 
 ```

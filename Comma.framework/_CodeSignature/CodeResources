@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		1mNhUMaK6IY2hODU6kqjf9YZJ60=
+		pHMXbLvSx9sKKgjVV4SaS+6+vYQ=
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/Comma.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		1mNhUMaK6IY2hODU6kqjf9YZJ60=
+		pHMXbLvSx9sKKgjVV4SaS+6+vYQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -101,7 +101,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bsTaVO65hapEU7d3AIlPQAypEETUSCDMyrAr8trmEKQ=
+			VmOw72KO3fORxbFgJb0z3DEaR5RebkvWzCoCgha+RLU=
 			</data>
 		</dict>
 		<key>Modules/Comma.swiftmodule/arm64.swiftdoc</key>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bsTaVO65hapEU7d3AIlPQAypEETUSCDMyrAr8trmEKQ=
+			VmOw72KO3fORxbFgJb0z3DEaR5RebkvWzCoCgha+RLU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

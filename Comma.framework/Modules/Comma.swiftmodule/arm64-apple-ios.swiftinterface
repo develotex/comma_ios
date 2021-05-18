@@ -1,0 +1,191 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name Comma
+import AVFoundation.AVFCapture
+import AVFoundation
+import CallKit
+@_exported import Comma
+import Foundation
+import Swift
+import SwiftSignalRClient
+import UIKit.UIImage
+import UIKit
+import WebRTC
+public func getDeviceId() -> Swift.String?
+public func setDeviceId(_ string: Swift.String)
+public func deleteDeviceID()
+public func getDeviceSecret() -> Swift.String?
+public func setDeviceSecret(_ string: Swift.String)
+public func deleteDeviceSecret()
+public protocol CommaService {
+  func configureService(withDeviceSecret: Swift.String, deviceId: Swift.String, voipToken: Swift.String?, isApnsSandbox: Swift.Bool?) -> Comma.CommaService?
+  func configureService(userId: Swift.Int, userName: Swift.String, projectId: Swift.Int, projectApiKey: Swift.String, voipToken: Swift.String?, isApnsSandbox: Swift.Bool?) -> Comma.CommaService?
+  func startCall(id: Swift.String)
+  func startVideoCall(id: Swift.String)
+  func setupVideo(localView: UIKit.UIView, remoteView: UIKit.UIView, cameraPosition: AVFoundation.AVCaptureDevice.Position)
+  func registerVoipPushNotification(voipToken: Swift.String, isApnsSandbox: Swift.Bool)
+  func didReceiveIncomingPushWith(dictionaryPayload: [Swift.AnyHashable : Any], withCallKit: Swift.Bool)
+  func didReceiveIncomingPushWith(incomingCall: Comma.IncomingCall, withCallKit: Swift.Bool)
+  func setMuteVideo(_ isMute: Swift.Bool)
+  func setMuteAudio(_ isMute: Swift.Bool)
+  func deleteDevice()
+  func setSpeaker(_ isOn: Swift.Bool)
+  func answerCall(_ isAccept: Swift.Bool, type: Swift.Int?)
+  func endCall()
+  var register: ((Swift.String?) -> Swift.Void)? { get set }
+  var isAnswered: ((Comma.IncomingCall) -> Swift.Void)? { get set }
+  var isDeleted: ((Swift.String?) -> Swift.Void)? { get set }
+  var isVideoCall: ((Swift.String?) -> Swift.Void)? { get set }
+  var isCallEnded: ((Swift.String?) -> Swift.Void)? { get set }
+  var connectionStateDidChange: ((Comma.ConnectionState?) -> Swift.Void)? { get set }
+  var isReceiveIncomingCall: ((Comma.IncomingCall) -> Swift.Void)? { get set }
+  func closePeerConnection()
+}
+@_inheritsConvenienceInitializers @objc public class CommaManager : ObjectiveC.NSObject {
+  public static var shared: Comma.CommaManager
+  public var register: ((Swift.String?) -> Swift.Void)?
+  public var connectionStateDidChange: ((Comma.ConnectionState?) -> Swift.Void)?
+  public var isDeleted: ((Swift.String?) -> Swift.Void)?
+  public var isAnswered: ((Comma.IncomingCall) -> Swift.Void)?
+  public var isReceiveIncomingCall: ((Comma.IncomingCall) -> Swift.Void)?
+  public var isVideoCall: ((Swift.String?) -> Swift.Void)?
+  public var isCallEnded: ((Swift.String?) -> Swift.Void)?
+  public var localCalleeID: Swift.String?
+  public var isConfigure: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CommaManager : Comma.CommaService {
+  public func closePeerConnection()
+  public func deleteDevice()
+  public func closeConnection()
+  public func answerCall(_ isAccept: Swift.Bool, type: Swift.Int?)
+  public func didReceiveIncomingPushWith(dictionaryPayload: [Swift.AnyHashable : Any], withCallKit: Swift.Bool)
+  public func didReceiveIncomingPushWith(incomingCall: Comma.IncomingCall, withCallKit: Swift.Bool)
+  @discardableResult
+  public func configureService(withDeviceSecret: Swift.String, deviceId: Swift.String, voipToken: Swift.String?, isApnsSandbox: Swift.Bool?) -> Comma.CommaService?
+  @discardableResult
+  public func configureService(userId: Swift.Int, userName: Swift.String, projectId: Swift.Int, projectApiKey: Swift.String, voipToken: Swift.String?, isApnsSandbox: Swift.Bool?) -> Comma.CommaService?
+  public func setMuteVideo(_ isMute: Swift.Bool)
+  public func setMuteAudio(_ isMute: Swift.Bool)
+  public func setSpeaker(_ isOn: Swift.Bool)
+  public func registerVoipPushNotification(voipToken: Swift.String, isApnsSandbox: Swift.Bool)
+  public func startCall(id: Swift.String)
+  public func startVideoCall(id: Swift.String)
+  public func endCall()
+  public func setupVideo(localView: UIKit.UIView, remoteView: UIKit.UIView, cameraPosition: AVFoundation.AVCaptureDevice.Position)
+}
+public struct RegisterModel : Swift.Codable {
+  public init(localUserId: Swift.Int, userName: Swift.String, projectId: Swift.Int, projectApiKey: Swift.String, platform: Swift.Int = 2, voipToken: Swift.String? = nil, IsApnsSandbox: Swift.Bool? = nil, bundleId: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct LoginModel : Swift.Codable {
+  public init(deviceId: Swift.String, deviceSecret: Swift.String, voipToken: Swift.String? = nil, isApnsSandbox: Swift.Bool? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CallModel : Swift.Codable {
+  public init(localCalleeId: Swift.Int, callType: Swift.Int)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct AcceptModel : Swift.Codable {
+  public init(isCallAccepted: Swift.Bool)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct AcceptResponseModel : Swift.Codable {
+  public init(isAccepted: Swift.Bool)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SdpModel : Swift.Codable {
+  public init(sdp: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CandidateModel : Swift.Codable {
+  public init(iceCandidate: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ReceivedCandidateModel : Swift.Codable {
+  public init(iceCandidate: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignalResponse : Swift.Codable {
+  public init(isSuccessful: Swift.Bool, error: Swift.Int? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignalResponseL : Swift.Codable {
+  public init(isSuccessful: Swift.Bool, error: Swift.Int? = nil, data: Comma.SignalResponseLogin? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignalResponseR : Swift.Codable {
+  public init(isSuccessful: Swift.Bool, error: Swift.Int? = nil, data: Comma.SignalResponseRegister? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignalResponseRegister : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignalResponseLogin : Swift.Codable {
+  public init(localUserId: Swift.Int? = nil, pendingCall: Swift.Int? = nil, localUserName: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignalResponseInt : Swift.Codable {
+  public init(isSuccessful: Swift.Bool? = nil, responseError: Swift.Int? = nil, errorDescription: Swift.String? = nil, data: Swift.Int)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignalResponseString : Swift.Codable {
+  public init(isSuccessful: Swift.Bool? = nil, responseError: Swift.Int? = nil, errorDescription: Swift.String? = nil, data: Swift.Int)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignalResponseIEnumerable : Swift.Codable {
+  public init(isSuccessful: Swift.Bool? = nil, responseError: Swift.Int? = nil, errorDescription: Swift.String? = nil, data: [Swift.Int?])
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SignalResponseBool : Swift.Codable {
+  public init(isSuccessful: Swift.Bool? = nil, error: Swift.Int? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ReceiveIncomingCallResponse : Swift.Codable {
+  public init(incomingCall: Comma.IncomingCall)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct IncomingCall : Swift.Codable {
+  public var localCallerId: Swift.Int?
+  public var callType: Swift.Int?
+  public var localCalleeId: Swift.Int?
+  public var callerName: Swift.String?
+  public init(localCallerId: Swift.Int? = nil, callType: Swift.Int? = nil, localCalleeId: Swift.Int? = nil, callerName: Swift.String? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct UpdateDeviceModel : Swift.Codable {
+  public init(voipToken: Swift.String? = nil, isApnsSandbox: Swift.Bool? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum ConnectionState {
+  case checking
+  case connected
+  case failed
+  case disconnected
+  public static func == (a: Comma.ConnectionState, b: Comma.ConnectionState) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}

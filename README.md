@@ -99,11 +99,11 @@ receive voip push token
 ```
 func pushRegistry(_ registry: PKPushRegistry, didReceiveIncomingPushWith payload: PKPushPayload, for type: PKPushType, completion: @escaping () -> Void) {
   if type == .voIP {
-    commaManager?.didReceiveIncomingPushWith(dictionaryPayload: payload.dictionaryPayload)
+  commaManager.didReceiveIncomingPushWith(dictionaryPayload: payload.dictionaryPayload, withCallKit: true)
   }
 }
 ```
-
+If you are using CallKit: to show the application logo on the callkit screen you need to add the image named  `AppIconForComma `.
 
 ### **Accept or Decline Incoming Call**
 Accept 
